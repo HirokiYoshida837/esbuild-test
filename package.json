@@ -1,7 +1,7 @@
 {
-  "name": "esbuild-test",
+  "name": "@HirokiYoshida837/esbuild-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "- https://zenn.dev/rabbit/articles/ef84ae02a987b2\r - https://github.com/tsuki-lab/use-microcms-iframe",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
@@ -12,11 +12,33 @@
     "build:esbuild": "ts-node build.ts",
     "build:types": "tsc --declaration --emitDeclarationOnly"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "h.yoshida",
+  "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.14.38",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.4"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "arg": "^4.1.3",
+    "acorn": "^8.7.1",
+    "make-error": "^1.3.6",
+    "diff": "^4.0.2",
+    "create-require": "^1.1.1",
+    "esbuild-windows-64": "^0.14.38",
+    "v8-compile-cache-lib": "^3.0.1",
+    "yn": "^3.1.1",
+    "acorn-walk": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HirokiYoshida837/esbuild-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HirokiYoshida837/esbuild-test/issues"
+  },
+  "homepage": "https://github.com/HirokiYoshida837/esbuild-test#readme"
 }
